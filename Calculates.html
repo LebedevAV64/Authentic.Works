@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="Styles/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/png" href="images/icon_A.png" />
+        <title>Калькуляторы</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/icon_A.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                    Authentic.Works
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGalleryMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Галерея</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownGalleryMenuLink">
+                                <li><a class="dropdown-item" href="KitchensGallery.html">Кухни</a></li>
+                                <li><a class="dropdown-item" href="ClosetsGallery.html">Шкафы-купе</a></li>
+                                <li><a class="dropdown-item" href="BedroomsGallery.html">Спальни</a></li>
+                                <li><a class="dropdown-item" href="ChildrensRoomGallery.html">Детские</a></li>
+                                <li><a class="dropdown-item" href="ProjectsGallery.html">Проекты</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResourceMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">Ресурсы</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownResourceMenuLink">
+                                <li><a class="dropdown-item" href="Brands.html">Бренды</a></li>
+                                <li><a class="dropdown-item" href="Soft.html">Софт</a></li>
+                                <li><a class="dropdown-item active" href="Calculates.html">Калькуляторы</a></li>
+                                <li><a class="dropdown-item" href="Tools.html">Инструменты</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contacts.html">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Untitled-2.html">О Нас</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <section class="py-5 text-muted container">
+                <div class="row py-lg-5">
+                    <div class="col-md-8 mx-auto text-light">
+                        <h1>Authentic.Works</h1>
+                        <h3 class="text-light">Калькуляторы:</h3>
+                        <p>
+                            Расчеты в данных программах выполняются по нашим алгоритмам, к которым мы привыкли и постоянно с ними работаем. 
+                            Данные могут отличаться от чьих-либо других расчетов. 
+                            Мы работаем над более широким спектром расчетов, чтобы можно было так же расчитывать кухонные модули с горизонтальным расположением фасадов. 
+                            Так же появятся калькуляторы для расчетов других систем раздвижных дверей шкафов-купе.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="container text-light" style="max-width: 60%">
+                <form class="mb-5">
+                    <fieldset class="bg-dark p-3 rounded">
+                        <legend class="text-warning">Расчет алюминиевых дверей шкафов-купе системы версаль</legend>
+                        <div class="mb-3">
+                            <label for="shrn" class="form-label">Ширина проёма</label>
+                            <input type="number" class="form-control" id="shrn" aria-describedby="widthHelp">
+                            <div id="widthHelp" class="form-text text-light">при замере ширины проема нужно учитывать наличие отбойников дверей</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="vst" class="form-label">Высота проёма</label>
+                            <input type="number" class="form-control" id="vst" aria-describedby="heightHelp">
+                            <div id="heightHelp" class="form-text text-light">при замере неровного дверного проема всегда учитывайте меньшую высоту</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="kdvr" class="form-label">Колличество дверей</label>
+                            <input type="number" class="form-control" id="kdvr" aria-describedby="doorsHelp">
+                            <div id="doorsHelp" class="form-text text-light">ширина двери не должна превышать 1000мм</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="per" class="form-label">Колличество перемычек</label>
+                            <input type="number" class="form-control" id="per" aria-describedby="jumperHelp">
+                            <div id="jumperHelp" class="form-text text-light">размер вставок рассчитывается из расчета на то, что расстояние между поперечками будет одинаковое</div>
+                        </div>
+                        <button type="button" class="btn btn-warning bg-dark text-warning" onclick="calculate();">Рассчитать</button>
+                        <button type="button" class="btn btn-warning bg-dark text-warning" onclick="removeAll();">Очистить</button>
+                        <div class="my-3" id="resultDiv">
+                            <ul id="showResult"></ul>
+                        </div>
+                    </fieldset>
+                </form>
+                <form class="mb-5">
+                    <fieldset class="bg-dark p-3 rounded">
+                        <legend class="text-warning">Разбор отдельных кухонных модулей на составляющие</legend>
+                        <div class="mb-3">
+                            <label for="kitchenWidth" class="form-label">Ширина модуля</label>
+                            <select id="kitchenWidth" class="form-select" aria-describedby="kitchenWidthHelp">
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="600">600</option>
+                                <option value="700">700</option>
+                                <option value="800">800</option>
+                                <option value="900">900</option>
+                                <option value="900">1000</option>
+                            </select>
+                            <div id="kitchenWidthHelp" class="form-text text-light">модули шириной более 1000мм не рекомендуются из-за тяжести фасадов или выдвижных ящиков</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="kitchenHeight" class="form-label">Высота модуля</label>
+                            <select id="kitchenHeight" class="form-select" aria-describedby="kitchenHeightHelp">
+                                <option value="550">550</option>
+                                <option value="700">700</option>
+                                <option value="800">800</option>
+                                <option value="900">900</option>
+                            </select>
+                            <div id="kitchenHeightHelp" class="form-text text-light">при расчете нижних модулей кухни высота модуля фиксированная, для расчета выберите любую высоту</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="kitchenVolume" class="form-label">Глубина модуля</label>
+                            <select id="kitchenVolume" class="form-select" aria-describedby="kitchenVolumeHelp">
+                                <option value="280">280</option>
+                                <option value="300">300</option>
+                                <option value="350">350</option>
+                                <option value="400">400</option>
+                                <option value="450">450</option>
+                                <option value="500">500</option>
+                                <option value="550">550</option>
+                            </select>
+                            <div id="kitchenVolumeHelp" class="form-text text-light">при выборе глубины более 300мм, рассчитывается нижний модуль</div>
+                        </div>
+                        <button type="button" class="btn btn-warning bg-dark text-warning" onclick="kitchenCalculate();">Рассчитать</button>
+                        <button type="button" class="btn btn-warning bg-dark text-warning" onclick="deleteAll();">Очистсть</button>
+                        <div class="my-3" id="kitchenResultDiv">
+                            <ul id="showKitchenResult"></ul>
+                        </div>
+                    </fieldset>
+                </form>
+                <form class="mb-5">
+                    <fieldset class="bg-dark p-3 rounded">
+                        <legend class="text-warning">Расчет алюминиевых дверей шкафов-купе системы NOVA компании Aristo</legend>
+                        <div class="mb-3">
+                            <p>
+                                На данный момент мы работаем над этим калькулятором. Можете ознакомиться с этой системой на 
+                                <a href="https://www.aristo.ru/review_aristo_systems/razdvizhnaya_sistema_nova/" class="text-warning" target="blank">официальном сайте</a> 
+                                производителя.
+                            </p>
+                        </div>
+                    </fieldset>
+                </form>
+                <form class="mb-5">
+                    <fieldset class="bg-dark p-3 rounded">
+                        <legend class="text-warning">Выдвижные системы</legend>
+                        <p>Калькуляторы расчёта деталей из ЛДСП для самых ходовых систем выдвижных ящиков</p>
+                        <hr>
+                        <h4>Swim-box</h4>
+                        <div class="mb-3">
+                            <label for="swimBoxWidth" class="form-label">Ширина модуля</label>
+                            <select id="swimBoxWidth" class="form-select" aria-describedby="swimBoxWidthHelp">
+                                <option value="300">300</option>
+                                <option value="350">350</option>
+                                <option value="400">400</option>
+                                <option value="450">450</option>
+                                <option value="500">500</option>
+                                <option value="550">550</option>
+                                <option value="600">600</option>
+                            </select>
+                            <div id="swimBoxWidthHelp" class="form-text text-light">Выберите ширину модуля</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="swimBoxLength" class="form-label">Размер направляющих</label>
+                            <select id="swimBoxLength" class="form-select" aria-describedby="swimBoxLengthHelp">
+                                <option value="300">300</option>
+                                <option value="350">350</option>
+                                <option value="400">400</option>
+                                <option value="450">450</option>
+                                <option value="500">500</option>
+                            </select>
+                            <div id="swimBoxLengthHelp" class="form-text text-light">Выберите размер направляющих</div>
+                        </div>
+                        <button type="button" class="btn btn-warning bg-dark text-warning" onclick="swimBoxCalculate();">Рассчитать</button>
+                        <button type="button" class="btn btn-warning bg-dark text-warning" onclick="removeSwimBoxResult();">Очистсть</button>
+                        <div class="my-3" id="swimBoxResultDiv">
+                            <ul id="showSwimBoxResult"></ul>
+                        </div>
+                        <hr>
+                        <h4>INNO Tech (hettich)</h4>
+                        <div class="mb-3">
+                            <label for="innoTechWidth" class="form-label">Ширина модуля</label>
+                            <select id="innoTechWidth" class="form-select" aria-describedby="innoTechWidthHelp">
+                                <option value="300">300</option>
+                                <option value="350">350</option>
+                                <option value="400">400</option>
+                                <option value="450">450</option>
+                                <option value="500">500</option>
+                                <option value="550">550</option>
+                                <option value="600">600</option>
+                            </select>
+                            <div id="innoTechWidthHelp" class="form-text text-light">Выберите ширину модуля</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="innoTechLength" class="form-label">Размер направляющих</label>
+                            <select id="innoTechLength" class="form-select" aria-describedby="innoTechLengthHelp">
+                                <option value="300">300</option>
+                                <option value="350">350</option>
+                                <option value="400">400</option>
+                                <option value="450">450</option>
+                                <option value="500">500</option>
+                            </select>
+                            <div id="innoTechLengthHelp" class="form-text text-light">Выберите размер направляющих</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="innoTechHeight" class="form-label">Глубина ящика</label>
+                            <select id="innoTechHeight" class="form-select" aria-describedby="innoTechHeightHelp">
+                                <option value="70">70</option>
+                                <option value="144">144</option>
+                                <option value="176">176</option>
+                            </select>
+                            <div id="innoTechHeightHelp" class="form-text text-light">Выберите глубину ящика</div>
+                        </div>
+                        <button type="button" class="btn btn-warning bg-dark text-warning" onclick="innoTechCalculate();">Рассчитать</button>
+                        <button type="button" class="btn btn-warning bg-dark text-warning" onclick="removeInnoTechResult();">Очистсть</button>
+                        <div class="my-3" id="innoTechResultDiv">
+                            <ul id="showInnoTechResult"></ul>
+                        </div>
+                        <hr>
+                        <h4>Скрытый монтаж</h4>
+                        <div class="mb-3">
+                            <label for="hiddenMountingWidth" class="form-label">Ширина модуля</label>
+                            <select id="hiddenMountingWidth" class="form-select" aria-describedby="hiddenMountingWidthHelp">
+                                <option value="300">300</option>
+                                <option value="350">350</option>
+                                <option value="400">400</option>
+                                <option value="450">450</option>
+                                <option value="500">500</option>
+                                <option value="550">550</option>
+                                <option value="600">600</option>
+                            </select>
+                            <div id="hiddenMountingWidthHelp" class="form-text text-light">Выберите ширину модуля</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="hiddenMountingLength" class="form-label">Размер направляющих</label>
+                            <select id="hiddenMountingLength" class="form-select" aria-describedby="hiddenMountingLengthHelp">
+                                <option value="300">300</option>
+                                <option value="350">350</option>
+                                <option value="400">400</option>
+                                <option value="450">450</option>
+                                <option value="500">500</option>
+                            </select>
+                            <div id="hiddenMountingLengthHelp" class="form-text text-light">Выберите размер направляющих</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="hiddenMountingVolume" class="form-label">Глубина</label>
+                            <input id="hiddenMountingVolume"  type="number" class="form-control" aria-describedby="hiddenMountingVolumeHelp">
+                            <div id="hiddenMountingVolumeHelp" class="form-text text-light">укажите глубину от 100мм до 300мм</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="hiddenMountingType" class="form-label">Тип дна</label>
+                            <select id="hiddenMountingType" class="form-select" aria-describedby="hiddenMountingTypeHelp">
+                                <option value="16">ЛДСП 16мм</option>
+                                <option value="10">ЛДСП 10мм</option>
+                                <option value="3">ХДФ/ДВП</option>
+                            </select>
+                            <div id="hiddenMountingTypeHelp" class="form-text text-light">Выберите тип дна ящика</div>
+                        </div>
+                        <button type="button" class="btn btn-warning bg-dark text-warning" onclick="hiddenMountingCalculate();">Рассчитать</button>
+                        <button type="button" class="btn btn-warning bg-dark text-warning" onclick="removeHiddenMountingResult();">Очистсть</button>
+                        <div class="my-3" id="hiddenMountingResultDiv">
+                            <ul id="showHiddenMountingResult"></ul>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer class="text-muted py-5">
+            <div class="container text-light">
+                <p class="float-right mb-1"><a href="#" class="link-warning">Наверх</a></p>
+                <p class="mb-1">Сайт разработан мастерской Authentic.Works 2019</p>
+                <p class="mb-0">Saratov,Russia</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <script src="Scripts/innotech.js"></script>
+        <script src="Scripts/case-compartment.js"></script>
+        <script src="Scripts/kitchen.js"></script>
+        <script src="Scripts/swimbox.js"></script>
+        <script src="Scripts/hidden-mounting.js"></script>
+    </body>
+</html>
