@@ -1,0 +1,22 @@
+@font-face {
+    font-family:RodeoExtraBold;
+    src:url(rodeoextrabold_[allfont.ru].ttf);
+}
+
+body {
+    background:url(../images/Charred_Wood.jpg);
+    background-attachment:fixed;
+}
+
+h1{
+    font-family:RodeoExtraBold;
+    text-shadow: 0 0 10px black;
+    color: gold;
+}
+
+img{
+    box-shadow: 0 0 10px black;
+}
+a{
+    text-decoration: none !important;
+}

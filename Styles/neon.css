@@ -1,0 +1,82 @@
+#logo {
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    display: inline-block;
+    border: 4px double rgba(255,255,255,.25);
+    border-width: 4px 0;
+}
+
+#neonText {
+    font: 700 2.5em/1 "Oswald", Georgia;
+    padding: 7px;  
+    display: block;
+    color: white;
+    text-shadow:
+        0 0 5px yellow,
+        0 0 10px gold,
+        0 0 15px gold,
+        0 0 20px darkgoldenrod,
+        0 0 35px orange,
+        0 0 50px darkorange,
+        0 0 100px darkorange;
+}
+
+.neon{
+    animation: neon-4 linear infinite 2s;
+}
+
+@keyframes neon-4 {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79%{
+        color: black;
+    }
+    80% {
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: black;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: black;
+        text-shadow: none;
+    }
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+#neonI{
+    animation: neon-5 linear infinite 3s;
+}
+
+@keyframes neon-5 {
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: black;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: black;
+        text-shadow: none;
+    }
+}
